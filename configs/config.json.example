@@ -1,0 +1,14 @@
+{
+  "start_time": 1645747200000,
+  "end_time": 1645758310457,
+  "coinbase_address": "address with salt",
+  "withdraw_address": "address with salt",
+  "mysql": {
+    "username": "root",
+    "password": "1007",
+    "network": "tcp",
+    "server": "127.0.0.1",
+    "port": 3306,
+    "database": "stc_proofreading"
+  }
+}

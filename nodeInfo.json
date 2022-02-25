@@ -1,0 +1,78 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "peer_info": {
+      "peer_id": "12D3KooWA8rDxMWENppqrPo2DrtwGgHBjndPwyjyCx2ZmLWZs2Y7",
+      "chain_info": {
+        "chain_id": 1,
+        "genesis_hash": "0x80848150abee7e9a3bfe9542a019eb0b8b01f124b63b011f9c338fdb935c417d",
+        "head": {
+          "block_hash": "0x9ebbe3560c8d7fb6dad5cc1cba900ec9c06db0e2d3175b050a5e720035ee3edd",
+          "parent_hash": "0x236a72a3b6203912f01e71f6d37eac508920c858fcd6de211f34ceb980a12d44",
+          "timestamp": "1645601456006",
+          "number": "4368040",
+          "author": "0x5555ad74ce032cae631e7c8379688029",
+          "author_auth_key": null,
+          "txn_accumulator_root": "0x0507fce6c88355dd6beb2c6763682362adf50bea2b11fffd96aaed66b1cf385e",
+          "block_accumulator_root": "0x56c8132ddf64c19747b8959efc89af80e1936e8838c3a1a8cd599a810827bb70",
+          "state_root": "0x8121e45ba48914725066e635b1ed0fcb6d01e5a7884f97112711459badf8f3e9",
+          "gas_used": "0",
+          "difficulty": "0x255fbffd",
+          "body_hash": "0xc01e0329de6d899348a8ef4bd51db56175b3fa0988e57c3dcec8eaf13a164d97",
+          "chain_id": 1,
+          "nonce": 134220466,
+          "extra": "0x9b92df5e"
+        },
+        "block_info": {
+          "block_hash": "0x9ebbe3560c8d7fb6dad5cc1cba900ec9c06db0e2d3175b050a5e720035ee3edd",
+          "total_difficulty": "0x033bc3b88154ad",
+          "txn_accumulator_info": {
+            "accumulator_root": "0x0507fce6c88355dd6beb2c6763682362adf50bea2b11fffd96aaed66b1cf385e",
+            "frozen_subtree_roots": [
+              "0xb201b5e82b25765089b529c99c23c8851b5c2b43aa7ee803551a5231bc6594f8",
+              "0xbea297ed10e42432918bb80431fe7d0387a6cd6687ba54e1bf7b7428536f7743",
+              "0xa4eff8977b5039227e21711be4249a32984f0f6fbd1209ce6d9c91f8b3eaae41",
+              "0x829584f6346f8bf14e6ce2342f1432388e35dee752cbb12a162a6e94e476eedf",
+              "0x1d4c73fb386ebbfbff5c63e1d1acca42b3f33fb65a0a1409e4510c953de77947",
+              "0xa0d63f5465f63241122f4d6b2890a3781780447ee0b6bc72f1311131a26fcdbe",
+              "0x18f011f98bec6266e70761b559e531353e6807b9bbaa803345a3129f41ce410a",
+              "0xe5deec95b7088e17081ba8f6c5e4727b5d065c148e5f978e6fee58c240333cdc",
+              "0x2af6c9018e043bf19bc639479aa9d46553007d2e6175e87f9ad5ddf731acc11a",
+              "0x6b99d14aaf30520044acc51705e403c2f20bef3a7fe2b0eae916d46bfd7c62a3",
+              "0xd54a68fe934c9edd47d4e3cf9c554df2987bb667b4b97243bfa84112aaf9c7e0",
+              "0x828c7fa178db47cd334c138ecd9e51f1e49959045b9f87b29aa03e0fa1e47553"
+            ],
+            "num_leaves": "4659661",
+            "num_nodes": "9319310"
+          },
+          "block_accumulator_info": {
+            "accumulator_root": "0x056dc5f680d5f5184a84dfc02f92e6630c43f69f2454e6b6c4c50d8aeee55a66",
+            "frozen_subtree_roots": [
+              "0xf64f98d60273ade9e06a9d250432392a125e6ce5e701d0567661fdc46fa81a2e",
+              "0x57913c5bd004c79d4b07a68cff15312bf615f7bd0028123cb11634f2c2adf425",
+              "0xfc305e92426e3bff3c65108b921dc22c29acb7cd718d5d99bf169a261a8d298f",
+              "0x106b6cb2124066abce65c875b0e2f05eb30c7023fca43a691be1c26a782d4be9",
+              "0xed9129e5526a1b8e36d029f28b90b28120f8b245c3866d5d613d9080bd95c33f",
+              "0x49b13b2a48a29b0a84e3d552a2925f93bf08bdb6887463316f3412967c366b9d",
+              "0x8836d1552849ac93eaf8ca2c2c52156af64b8c01af07bb2004cebf97b625a435",
+              "0x231b8048813f23c79b011f3f8b5fd1aaa45dddaee4f1ae12e61f4db201ba8cb8",
+              "0x6d547b854a356ad83a1fd8f60311fc57cced9c03587a5a326d6b800b8f99414c",
+              "0x9ebbe3560c8d7fb6dad5cc1cba900ec9c06db0e2d3175b050a5e720035ee3edd"
+            ],
+            "num_leaves": "4368041",
+            "num_nodes": "8736072"
+          }
+        }
+      },
+      "notif_protocols": "/starcoin/block/1,/starcoin/txn/1,/starcoin/announcement/1",
+      "rpc_protocols": "/starcoin/rpc/get_account_state,/starcoin/rpc/get_accumulator_node_by_node_hash,/starcoin/rpc/get_block_ids,/starcoin/rpc/get_block_infos,/starcoin/rpc/get_blocks,/starcoin/rpc/get_bodies_by_hash,/starcoin/rpc/get_headers_by_hash,/starcoin/rpc/get_headers_by_number,/starcoin/rpc/get_state_node_by_node_hash,/starcoin/rpc/get_state_with_proof,/starcoin/rpc/get_txn_infos,/starcoin/rpc/get_txns,/starcoin/rpc/get_txns_from_pool,/starcoin/rpc/get_txns_with_hash_from_pool,/starcoin/rpc/ping"
+    },
+    "self_address": "/ip4/127.0.0.1/tcp/9840/p2p/12D3KooWA8rDxMWENppqrPo2DrtwGgHBjndPwyjyCx2ZmLWZs2Y7",
+    "net": "main",
+    "consensus": {
+      "type": "CryptoNight"
+    },
+    "now_seconds": 1645601476
+  },
+  "id": 101
+}

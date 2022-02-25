@@ -1,0 +1,66 @@
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "block_hash": "0xabeae41a3d3b729d1d5a1de06c5cbc1d9f29832ed962c439518da068fad41e86",
+      "block_number": "4368960",
+      "transaction_hash": "0xc3629d911913136697659a55da92e68ebd79c6ff01391e4d464f629c1439ca70",
+      "transaction_index": 0,
+      "transaction_global_index": "4660630",
+      "data": "0x40aa420000000000707d8fc016acae0a1a859769ad0c4fcf87dac4257f0100000000000000000000",
+      "type_tag": "0x00000000000000000000000000000001::Block::NewBlockEvent",
+      "event_index": 0,
+      "event_key": "0x040000000000000000000000000000000000000000000001",
+      "event_seq_number": "4368959"
+    },
+    {
+      "block_hash": "0xabeae41a3d3b729d1d5a1de06c5cbc1d9f29832ed962c439518da068fad41e86",
+      "block_number": "4368960",
+      "transaction_hash": "0xc3629d911913136697659a55da92e68ebd79c6ff01391e4d464f629c1439ca70",
+      "transaction_index": 0,
+      "transaction_global_index": "4660630",
+      "data": "0x1c4700000000000087dac4257f01000040aa42000000000030ab420000000000881300000000000000f2052a01000000000000000000000000fa037e190100000000000000000000",
+      "type_tag": "0x00000000000000000000000000000001::Epoch::NewEpochEvent",
+      "event_index": 1,
+      "event_key": "0x090000000000000000000000000000000000000000000001",
+      "event_seq_number": "18203"
+    },
+    {
+      "block_hash": "0xabeae41a3d3b729d1d5a1de06c5cbc1d9f29832ed962c439518da068fad41e86",
+      "block_number": "4368960",
+      "transaction_hash": "0xc3629d911913136697659a55da92e68ebd79c6ff01391e4d464f629c1439ca70",
+      "transaction_index": 0,
+      "transaction_global_index": "4660630",
+      "data": "0x00f2052a010000000000000000000000",
+      "type_tag": "0x00000000000000000000000000000001::Treasury::WithdrawEvent",
+      "event_index": 2,
+      "event_key": "0x100000000000000000000000000000000000000000000001",
+      "event_seq_number": "4368955"
+    },
+    {
+      "block_hash": "0xabeae41a3d3b729d1d5a1de06c5cbc1d9f29832ed962c439518da068fad41e86",
+      "block_number": "4368960",
+      "transaction_hash": "0xc3629d911913136697659a55da92e68ebd79c6ff01391e4d464f629c1439ca70",
+      "transaction_index": 0,
+      "transaction_global_index": "4660630",
+      "data": "0x00f2052a01000000000000000000000000000000000000000000000000000001035354430353544300",
+      "type_tag": "0x00000000000000000000000000000001::Account::DepositEvent",
+      "event_index": 3,
+      "event_key": "0x0100000000000000707d8fc016acae0a1a859769ad0c4fcf",
+      "event_seq_number": "839796"
+    },
+    {
+      "block_hash": "0xabeae41a3d3b729d1d5a1de06c5cbc1d9f29832ed962c439518da068fad41e86",
+      "block_number": "4368960",
+      "transaction_hash": "0xc3629d911913136697659a55da92e68ebd79c6ff01391e4d464f629c1439ca70",
+      "transaction_index": 0,
+      "transaction_global_index": "4660630",
+      "data": "0x39aa42000000000000f2052a01000000000000000000000000000000000000000000000000000000707d8fc016acae0a1a859769ad0c4fcf",
+      "type_tag": "0x00000000000000000000000000000001::BlockReward::BlockRewardEvent",
+      "event_index": 4,
+      "event_key": "0x0d0000000000000000000000000000000000000000000001",
+      "event_seq_number": "4368952"
+    }
+  ],
+  "id": 101
+}

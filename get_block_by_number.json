@@ -1,0 +1,27 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "header": {
+      "block_hash": "0x9ebbe3560c8d7fb6dad5cc1cba900ec9c06db0e2d3175b050a5e720035ee3edd",
+      "parent_hash": "0x236a72a3b6203912f01e71f6d37eac508920c858fcd6de211f34ceb980a12d44",
+      "timestamp": "1645601456006",
+      "number": "4368040",
+      "author": "0x5555ad74ce032cae631e7c8379688029",
+      "author_auth_key": null,
+      "txn_accumulator_root": "0x0507fce6c88355dd6beb2c6763682362adf50bea2b11fffd96aaed66b1cf385e",
+      "block_accumulator_root": "0x56c8132ddf64c19747b8959efc89af80e1936e8838c3a1a8cd599a810827bb70",
+      "state_root": "0x8121e45ba48914725066e635b1ed0fcb6d01e5a7884f97112711459badf8f3e9",
+      "gas_used": "0",
+      "difficulty": "0x255fbffd",
+      "body_hash": "0xc01e0329de6d899348a8ef4bd51db56175b3fa0988e57c3dcec8eaf13a164d97",
+      "chain_id": 1,
+      "nonce": 134220466,
+      "extra": "0x9b92df5e"
+    },
+    "body": {
+      "Full": []
+    },
+    "uncles": []
+  },
+  "id": 101
+}

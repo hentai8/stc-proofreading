@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "block_hash": "0x9ebbe3560c8d7fb6dad5cc1cba900ec9c06db0e2d3175b050a5e720035ee3edd",
+      "block_number": "4368040",
+      "transaction_hash": "0xd3cd7cfbe58b6dc73ba1a475193cd21ef6c13bfa74cb38a2abeb0acd3ec6f0ae",
+      "transaction_index": 0,
+      "transaction_global_index": "4659660",
+      "state_root_hash": "0x8121e45ba48914725066e635b1ed0fcb6d01e5a7884f97112711459badf8f3e9",
+      "event_root_hash": "0xeb1faee9a9505d91ca3c446de87f5db4b9512a4bbd8a5004e2f7d3dd404bb2e4",
+      "gas_used": "0",
+      "status": "Executed"
+    }
+  ],
+  "id": 101
+}
