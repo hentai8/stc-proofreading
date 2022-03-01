@@ -5,6 +5,8 @@ import (
     "github.com/jinzhu/configor"
     "stc-proofreading-go/cmd/stc"
     "stc-proofreading-go/configs"
+    "sync"
+    "time"
 )
 
 var cfg configs.Config
@@ -14,16 +16,45 @@ var cfg configs.Config
 //  @Description: 主函数入口
 //
 func main() {
+    var wg sync.WaitGroup
+    duration := time.Hour * 24
+    timer := time.NewTimer(duration)
+    wg.Add(1)
+    go func() {
+        for {
+            select {
+            case <-timer.C:
+                //获取前一天的0点和24点的时间戳
+                currentTime := time.Now()
+                yesterdayTime := time.Unix(currentTime.Unix()-86400, 0)
+                startTime := time.Date(yesterdayTime.Year(), yesterdayTime.Month(), yesterdayTime.Day(), 0, 0, 0, 0, yesterdayTime.Location()).UnixNano() / 1000000
+                endTime := time.Date(currentTime.Year(), currentTime.Month(), currentTime.Day(), 0, 0, 0, 0, currentTime.Location()).UnixNano() / 1000000
+
+                //运行统计,计入mysql数据库
+                periodicTask(startTime, endTime)
+                //periodicTask(1645574400000, 1645575400000)
+                timer.Reset(duration)
+            }
+        }
+        wg.Done()
+    }()
+    wg.Wait()
+}
+
+//
+// periodicTask
+//  @Description: 单次统计
+//  @param startTime
+//  @param endTime
+//
+func periodicTask(startTime int64, endTime int64) {
     var stc stc.Node
 
     // 读取配置文件
-    err := configor.Load(&cfg, "configs/config.json")
+    err := configor.Load(&cfg, "../configs/config.json")
     if err != nil {
         fmt.Println("read config err")
     }
-
-    startTime := cfg.StartTime
-    endTime := cfg.EndTime
 
     // 获取最新的block和最旧的block的timestamp
     newestTimeInt, oldestTimeInt, newestTransactionGlobalIndexInt := stc.GetTimestampBoundary()

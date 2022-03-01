@@ -53,7 +53,7 @@ var cfg configs.Config
 //  @return *sqlx.DB
 //
 func create() *sqlx.DB {
-    err := configor.Load(&cfg, "/home/hentai8/Desktop/project/pool-watcher/configs/config.json")
+    err := configor.Load(&cfg, "/home/project/stc-proofreading-go/configs/config.json")
     if err != nil {
         fmt.Println("read config err=", err)
         return nil
